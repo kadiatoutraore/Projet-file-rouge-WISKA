@@ -12,3 +12,5 @@ Au-delà de la discussion :
 - Espace Cours : Des modules de formation intégrés pour apprendre en discutant
 - Espace Jeux : Des mini-jeux ludiques pour briser la glace
 - Galerie Photo : Un espace dédié au partage et au visionnage de médias
+
+  conception et réalisation: TRAORÉ Kadiatou & Niamba Niamba Irenee Cyrusse
