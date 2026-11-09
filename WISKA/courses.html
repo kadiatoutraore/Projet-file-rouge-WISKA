@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiska - Espace Cours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Corrigé : pointage direct vers course.css à la racine -->
+    <link rel="stylesheet" href="course.css">
+</head>
+<body class="h-full bg-slate-950 text-slate-100 flex flex-col overflow-y-auto p-4 sm:p-6">
+
+    <div class="max-w-4xl mx-auto w-full space-y-6">
+        <div class="flex justify-between items-center bg-slate-900 border border-slate-800 p-4 rounded-2xl">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-white">W</div>
+                <span class="font-bold text-slate-100">Wiska Formation</span>
+            </div>
+            <a href="chat.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition flex items-center space-x-2">
+                <i class="fa-solid fa-comments"></i>
+                <span>Retour à la Messagerie</span>
+            </a>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-700 to-indigo-600 p-6 sm:p-8 rounded-3xl shadow-xl text-white">
+            <span class="text-xs uppercase font-extrabold tracking-widest bg-white/20 px-3 py-1 rounded-full">Apprentissage Continu</span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold mt-2">Modules & Quiz C++ / Web</h1>
+            <p class="text-xs sm:text-sm text-blue-100 mt-1 max-w-xl">Révisez vos concepts de programmation tout en restant connecté avec votre équipe.</p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4">
+            <h2 class="text-lg font-bold text-blue-400"><i class="fa-solid fa-brain mr-2"></i>Quiz Rapide : Langage C++</h2>
+            
+            <div class="space-y-4">
+                <p class="text-xs text-slate-300 font-semibold">Question : Quel mot-clé permet de déclarer une méthode virtuelle pure en C++ ?</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <button data-correct="false" class="quiz-option p-3 bg-slate-800 hover:bg-slate-700 rounded-xl text-xs text-left border border-slate-700 font-medium">A) virtual void Afficher();</button>
+                    <button data-correct="true" class="quiz-option p-3 bg-slate-800 hover:bg-slate-700 rounded-xl text-xs text-left border border-slate-700 font-medium">B) virtual void Afficher() = 0;</button>
+                    <button data-correct="false" class="quiz-option p-3 bg-slate-800 hover:bg-slate-700 rounded-xl text-xs text-left border border-slate-700 font-medium">C) pure void Afficher();</button>
+                    <button data-correct="false" class="quiz-option p-3 bg-slate-800 hover:bg-slate-700 rounded-xl text-xs text-left border border-slate-700 font-medium">D) abstract void Afficher();</button>
+                </div>
+            </div>
+            <div id="quiz-result" class="hidden p-3 rounded-xl text-xs text-center font-bold"></div>
+        </div>
+    </div>
+
+    <!-- Corrigé : pointage direct vers course.js à la racine (sans le dossier js/) -->
+    <script type="module" src="course.js"></script>
+</body>
+</html>
